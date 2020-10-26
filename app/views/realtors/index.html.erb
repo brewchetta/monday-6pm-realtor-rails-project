@@ -1,0 +1,12 @@
+<h1>Monday Realtors</h1>
+
+<% @realtors.each do |realtor| %>
+
+  <h2><%= link_to realtor.name, realtor_path(realtor) %></h2>
+
+  <ul>
+    <li>Company: <%= realtor.company %></li>
+    <li>Phone: <%= realtor.phone_number %></li>
+  </ul>
+
+<% end %>

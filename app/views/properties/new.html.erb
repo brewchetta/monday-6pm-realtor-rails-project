@@ -1,0 +1,21 @@
+<%= form_for [@realtor, @property] do |f| %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <br>
+
+  <%= f.label :rooms %>
+  <%= f.text_field :rooms %>
+  <br>
+
+  <%= f.label :bathrooms %>
+  <%= f.text_field :bathrooms %>
+  <br>
+
+  <%= f.label :property_value %>
+  <%= f.text_field :property_value %>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>

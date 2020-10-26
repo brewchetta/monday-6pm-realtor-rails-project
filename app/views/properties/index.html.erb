@@ -1,0 +1,14 @@
+<h1>Properties</h1>
+
+<% @properties.each do |property| %>
+
+  <h2><%= link_to property.address, realtor_property_path(property.realtor, property) %></h2>
+
+  <ul>
+    <li>Value: $<%= property.property_value %></li>
+    <li>Num Rooms: <%= property.rooms %></li>
+    <li>Num Bathrooms: <%= property.bathrooms %></li>
+    <li>Realtor: <%= link_to @realtor.name, realtor_path(@realtor) %></li>
+  </ul>
+
+<% end %>
