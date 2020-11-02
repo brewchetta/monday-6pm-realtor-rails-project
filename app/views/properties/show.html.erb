@@ -1,0 +1,15 @@
+<h1><%= @property.address %></h1>
+
+<ul>
+
+  <li>Value: <%= @property.property_value %></li>
+
+  <li>Rooms: <%= @property.rooms %></li>
+
+  <li>Bathrooms: <%= @property.bathrooms %></li>
+
+  <li>Realtor: <%= @property.realtor.name %></li>
+
+</ul>
+
+<%= link_to "Go back", root_path %>

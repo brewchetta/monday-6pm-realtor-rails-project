@@ -18,6 +18,11 @@ class PropertiesController < ApplicationController
     redirect_to realtor_properties_path(@realtor)
   end
 
+  def show
+    @property = Property.find(params[:id])
+    @realtor = Realtor.find(params[:realtor_id])
+  end
+
   private
 
   def property_params

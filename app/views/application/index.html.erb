@@ -1,0 +1,13 @@
+<h1>WELCOME TO MONDAY REALTORS</h1>
+
+<ul>
+
+  <% @properties.each do |property| %>
+    <li>
+      Address: <%= link_to property.address, realtor_property_path(property.realtor, property) %><br>
+      Property Value: <%= property.property_value %><br>
+      Realtor: <%= link_to property.realtor.name, property.realtor %>
+    </li>
+  <% end %>
+
+</ul>

@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Realtors", realtors_path %></li>
+        <li><%= link_to "Add Realtor", new_realtor_path %></li>
+      </ul>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
